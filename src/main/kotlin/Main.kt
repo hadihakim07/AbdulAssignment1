@@ -1,7 +1,6 @@
 package sheridan.hakimzaa
 
-import sheridan.hakimzaa.service.DisplayContacts
-import sheridan.hakimzaa.service.PhoneBook
+import sheridan.hakimzaa.service.*
 import java.util.*
 
 fun main() {
@@ -9,13 +8,13 @@ fun main() {
     val scanner = Scanner(System.`in`)
 
     while (true) {
-        println("\nKotlin Phone book:")
+        println("\nKotlin Phone book: \n")
         println("1. Add Contact")
         println("2. Search Contact")
         println("3. Edit Contact")
         println("4. Show all Contacts")
         println("5. Exit")
-        print("Select an option between 1-5")
+        print("Select an option between 1-5\n")
 
         when(scanner.nextLine()) {
             "1" -> AddContact(phoneBook).execute()
